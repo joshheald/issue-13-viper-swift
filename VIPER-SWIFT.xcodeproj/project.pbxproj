@@ -43,7 +43,6 @@
 		261FA1EC1942320E0029F589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261FA1EA1942320E0029F589 /* Main.storyboard */; };
 		261FA1EE194232180029F589 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261FA1ED194232180029F589 /* Images.xcassets */; };
 		26A605EB1942A1EE0036C71F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A605EA1942A1EE0036C71F /* AppDelegate.swift */; };
-		26D96F9C19428C3600F117F5 /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D96F9B19428C3600F117F5 /* CalendarTests.swift */; };
 		26D96F9D19428C7E00F117F5 /* NSCalendar+CalendarAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FA17919414A720029F589 /* NSCalendar+CalendarAdditions.swift */; };
 		26D96F9E19428D8100F117F5 /* NearTermDateRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FA18019414A720029F589 /* NearTermDateRelation.swift */; };
 		26D96FA11942912A00F117F5 /* UpcomingDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FA1AF19414A720029F589 /* UpcomingDisplayData.swift */; };
@@ -56,7 +55,6 @@
 		26D96FA81942915D00F117F5 /* UpcomingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FA1A619414A720029F589 /* UpcomingItem.swift */; };
 		26D96FA91942932A00F117F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261FA1EA1942320E0029F589 /* Main.storyboard */; };
 		26D96FAA1942932A00F117F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261FA1ED194232180029F589 /* Images.xcassets */; };
-		26D96FAC1942967900F117F5 /* RelativeDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D96FAB1942967900F117F5 /* RelativeDateTests.swift */; };
 		26D96FAE19429A9000F117F5 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D96FAD19429A9000F117F5 /* DataTests.swift */; };
 		26D96FAF19429AD000F117F5 /* ManagedTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FA1E619414CBE0029F589 /* ManagedTodoItem.swift */; };
 		26D96FB019429AD000F117F5 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FA18319414A720029F589 /* CoreDataStore.swift */; };
@@ -115,8 +113,6 @@
 		261FA1EB1942320E0029F589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "VIPER-SWIFT/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		261FA1ED194232180029F589 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "VIPER-SWIFT/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		26A605EA1942A1EE0036C71F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26D96F9B19428C3600F117F5 /* CalendarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarTests.swift; sourceTree = "<group>"; };
-		26D96FAB1942967900F117F5 /* RelativeDateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativeDateTests.swift; sourceTree = "<group>"; };
 		26D96FAD19429A9000F117F5 /* DataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,9 +165,7 @@
 		261FA1631941497E0029F589 /* VIPER-SWIFTTests */ = {
 			isa = PBXGroup;
 			children = (
-				26D96F9B19428C3600F117F5 /* CalendarTests.swift */,
 				26D96FAD19429A9000F117F5 /* DataTests.swift */,
-				26D96FAB1942967900F117F5 /* RelativeDateTests.swift */,
 				261FA1641941497E0029F589 /* Supporting Files */,
 			);
 			path = "VIPER-SWIFTTests";
@@ -520,7 +514,9 @@
 		261FA1461941497E0029F589 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Conrad Stoll";
 				TargetAttributes = {
 					261FA14D1941497E0029F589 = {
@@ -621,12 +617,10 @@
 				26D96FB219429B1A00F117F5 /* ListDataManager.swift in Sources */,
 				26D96FAF19429AD000F117F5 /* ManagedTodoItem.swift in Sources */,
 				26D96F9D19428C7E00F117F5 /* NSCalendar+CalendarAdditions.swift in Sources */,
-				26D96FAC1942967900F117F5 /* RelativeDateTests.swift in Sources */,
 				26D96FAE19429A9000F117F5 /* DataTests.swift in Sources */,
 				26D96FA71942913B00F117F5 /* ListModuleInterface.swift in Sources */,
 				26D96FA41942912A00F117F5 /* UpcomingDisplaySection.swift in Sources */,
 				26D96FA31942912A00F117F5 /* UpcomingDisplayItem.swift in Sources */,
-				26D96F9C19428C3600F117F5 /* CalendarTests.swift in Sources */,
 				26D96FA61942913600F117F5 /* ListViewInterface.swift in Sources */,
 				26D96FB019429AD000F117F5 /* CoreDataStore.swift in Sources */,
 				26D96FA11942912A00F117F5 /* UpcomingDisplayData.swift in Sources */,
@@ -680,6 +674,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -744,6 +739,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "VIPER-SWIFT/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -755,6 +751,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "VIPER-SWIFT/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -774,6 +771,7 @@
 				INFOPLIST_FILE = "VIPER-SWIFTTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -790,6 +788,7 @@
 				INFOPLIST_FILE = "VIPER-SWIFTTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
