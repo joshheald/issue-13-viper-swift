@@ -9,14 +9,9 @@
 import Foundation
 import UIKit
 
-class ListPresenter : NSObject, ListInteractorOutput, ListModuleInterface, AddModuleDelegate {
-    var listInteractor : ListInteractorInput?
+class ListPresenter : NSObject, ListInteractorOutput, ListPresenting {
     var listWireframe : ListWireframe?
     var userInterface : ListViewInterface?
-    
-    func updateView() {
-        listInteractor?.findUpcomingItems()
-    }
     
     func foundUpcomingItems(upcomingItems: [UpcomingItem]) {
         if upcomingItems.count == 0 {
@@ -37,15 +32,7 @@ class ListPresenter : NSObject, ListInteractorOutput, ListModuleInterface, AddMo
         return collection.collectedDisplayData()
     }
     
-    func addNewEntry() {
+    func presentAddInterface() {
         listWireframe?.presentAddInterface()
-    }
-    
-    func addModuleDidCancelAddAction() {
-        // No action necessary
-    }
-    
-    func addModuleDidSaveAddAction() {
-        updateView()
     }
 }

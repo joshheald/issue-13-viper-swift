@@ -9,6 +9,6 @@
 import Foundation
 
 protocol ListModuleInterface {
-    func addNewEntry()
-    func updateView()
+    func addNewEntryTapped()
+    func viewWillAppear()
 }

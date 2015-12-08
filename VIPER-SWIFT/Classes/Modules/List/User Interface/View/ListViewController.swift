@@ -28,7 +28,7 @@ class ListViewController : UITableViewController, ListViewInterface {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        eventHandler?.updateView()
+        eventHandler?.viewWillAppear()
     }
     
     func configureView() {
@@ -40,7 +40,7 @@ class ListViewController : UITableViewController, ListViewInterface {
     }
     
     func didTapAddButton () {
-        eventHandler?.addNewEntry()
+        eventHandler?.addNewEntryTapped()
     }
     
     func showNoContentMessage() {

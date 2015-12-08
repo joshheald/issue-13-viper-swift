@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		202B615E1C172F8E00D98A7A /* ListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B615D1C172F8E00D98A7A /* ListEventHandler.swift */; };
+		202B61611C17324100D98A7A /* ListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B61601C17324100D98A7A /* ListEventHandler.swift */; };
+		202B61631C17343400D98A7A /* ListPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B61621C17343400D98A7A /* ListPresenting.swift */; };
 		261FA1B919414A720029F589 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FA17219414A720029F589 /* AppDependencies.swift */; };
 		261FA1BC19414A720029F589 /* NSCalendar+CalendarAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FA17919414A720029F589 /* NSCalendar+CalendarAdditions.swift */; };
 		261FA1BE19414A720029F589 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FA17D19414A720029F589 /* Clock.swift */; };
@@ -73,6 +76,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		202B615D1C172F8E00D98A7A /* ListEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEventHandler.swift; sourceTree = "<group>"; };
+		202B61601C17324100D98A7A /* ListEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEventHandler.swift; sourceTree = "<group>"; };
+		202B61621C17343400D98A7A /* ListPresenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenting.swift; sourceTree = "<group>"; };
 		261FA14E1941497E0029F589 /* VIPER-SWIFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-SWIFT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		261FA1601941497E0029F589 /* VIPER-SWIFTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-SWIFTTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		261FA1651941497E0029F589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		202B615F1C17314E00D98A7A /* Event Handler */ = {
+			isa = PBXGroup;
+			children = (
+				202B61601C17324100D98A7A /* ListEventHandler.swift */,
+			);
+			name = "Event Handler";
+			sourceTree = "<group>";
+		};
 		261FA1451941497E0029F589 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +181,7 @@
 			children = (
 				26D96FAD19429A9000F117F5 /* DataTests.swift */,
 				261FA1641941497E0029F589 /* Supporting Files */,
+				202B615D1C172F8E00D98A7A /* ListEventHandler.swift */,
 			);
 			path = "VIPER-SWIFTTests";
 			sourceTree = "<group>";
@@ -416,6 +431,7 @@
 		261FA1AC19414A720029F589 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				202B615F1C17314E00D98A7A /* Event Handler */,
 				261FA1AD19414A720029F589 /* Presenter */,
 				261FA1B319414A720029F589 /* View */,
 				261FA1B619414A720029F589 /* Wireframe */,
@@ -431,6 +447,7 @@
 				261FA1B019414A720029F589 /* UpcomingDisplayDataCollection.swift */,
 				261FA1B119414A720029F589 /* UpcomingDisplayItem.swift */,
 				261FA1B219414A720029F589 /* UpcomingDisplaySection.swift */,
+				202B61621C17343400D98A7A /* ListPresenting.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -575,6 +592,7 @@
 			files = (
 				261FA1C719414A720029F589 /* AddDataManager.swift in Sources */,
 				261FA1D119414A720029F589 /* ListInteractorIO.swift in Sources */,
+				202B61631C17343400D98A7A /* ListPresenting.swift in Sources */,
 				261FA1D719414A720029F589 /* UpcomingDisplayDataCollection.swift in Sources */,
 				261FA1D219414A720029F589 /* UpcomingItem.swift in Sources */,
 				261FA1D519414A720029F589 /* ListPresenter.swift in Sources */,
@@ -599,6 +617,7 @@
 				261FA1D319414A720029F589 /* ListDataManager.swift in Sources */,
 				261FA1CA19414A720029F589 /* AddPresenter.swift in Sources */,
 				261FA1D019414A720029F589 /* ListInteractor.swift in Sources */,
+				202B61611C17324100D98A7A /* ListEventHandler.swift in Sources */,
 				261FA1C019414A720029F589 /* NearTermDateRelation.swift in Sources */,
 				261FA1E719414CBE0029F589 /* ManagedTodoItem.swift in Sources */,
 				261FA1D819414A720029F589 /* UpcomingDisplayItem.swift in Sources */,
@@ -627,6 +646,7 @@
 				26D96FA81942915D00F117F5 /* UpcomingItem.swift in Sources */,
 				26D96F9E19428D8100F117F5 /* NearTermDateRelation.swift in Sources */,
 				26D96FA51942912A00F117F5 /* ListViewController.swift in Sources */,
+				202B615E1C172F8E00D98A7A /* ListEventHandler.swift in Sources */,
 				26D96FB119429B1A00F117F5 /* TodoItem.swift in Sources */,
 				26D96FA21942912A00F117F5 /* UpcomingDisplayDataCollection.swift in Sources */,
 			);
