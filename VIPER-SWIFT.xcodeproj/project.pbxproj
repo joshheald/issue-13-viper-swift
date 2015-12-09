@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		202B615E1C172F8E00D98A7A /* ListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B615D1C172F8E00D98A7A /* ListEventHandler.swift */; };
+		202B615E1C172F8E00D98A7A /* ListEventHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B615D1C172F8E00D98A7A /* ListEventHandlerTests.swift */; };
 		202B61611C17324100D98A7A /* ListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B61601C17324100D98A7A /* ListEventHandler.swift */; };
 		202B61631C17343400D98A7A /* ListPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B61621C17343400D98A7A /* ListPresenting.swift */; };
 		261FA1B919414A720029F589 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FA17219414A720029F589 /* AppDependencies.swift */; };
@@ -76,7 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		202B615D1C172F8E00D98A7A /* ListEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEventHandler.swift; sourceTree = "<group>"; };
+		202B615D1C172F8E00D98A7A /* ListEventHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEventHandlerTests.swift; sourceTree = "<group>"; };
 		202B61601C17324100D98A7A /* ListEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEventHandler.swift; sourceTree = "<group>"; };
 		202B61621C17343400D98A7A /* ListPresenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenting.swift; sourceTree = "<group>"; };
 		261FA14E1941497E0029F589 /* VIPER-SWIFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-SWIFT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,7 +181,7 @@
 			children = (
 				26D96FAD19429A9000F117F5 /* DataTests.swift */,
 				261FA1641941497E0029F589 /* Supporting Files */,
-				202B615D1C172F8E00D98A7A /* ListEventHandler.swift */,
+				202B615D1C172F8E00D98A7A /* ListEventHandlerTests.swift */,
 			);
 			path = "VIPER-SWIFTTests";
 			sourceTree = "<group>";
@@ -646,7 +646,7 @@
 				26D96FA81942915D00F117F5 /* UpcomingItem.swift in Sources */,
 				26D96F9E19428D8100F117F5 /* NearTermDateRelation.swift in Sources */,
 				26D96FA51942912A00F117F5 /* ListViewController.swift in Sources */,
-				202B615E1C172F8E00D98A7A /* ListEventHandler.swift in Sources */,
+				202B615E1C172F8E00D98A7A /* ListEventHandlerTests.swift in Sources */,
 				26D96FB119429B1A00F117F5 /* TodoItem.swift in Sources */,
 				26D96FA21942912A00F117F5 /* UpcomingDisplayDataCollection.swift in Sources */,
 			);
