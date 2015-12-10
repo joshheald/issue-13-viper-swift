@@ -11,15 +11,15 @@ import UIKit
 class ListEventHandler: NSObject, ListModuleInterface, AddModuleDelegate {
     
     let listInteractor : ListInteractorInput
-    let listPresenter : ListPresenting
+    let addItemInteractor : AddItemInteractorInput
     
-    init(interactor: ListInteractorInput, presenter: ListPresenting) {
-        listInteractor = interactor
-        listPresenter = presenter
+    init(listInteractor: ListInteractorInput, addItemInteractor: AddItemInteractorInput) {
+        self.listInteractor = listInteractor
+        self.addItemInteractor = addItemInteractor
     }
     
     func addNewEntryTapped() {
-        listPresenter.presentAddInterface()
+        addItemInteractor.showAddInterface()
     }
     
     func viewWillAppear() {

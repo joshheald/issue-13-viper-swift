@@ -21,40 +21,40 @@ class ListEventHandlerTests: XCTestCase {
         super.tearDown()
     }
     
-    func test_addNewEntryTapped_tellsThePresenterToPresentTheAddInterface() {
-        let mockPresenter = MockListPresenter()
-        let sut = ListEventHandler(interactor: MockListInteractor(), presenter: mockPresenter)
+    func test_addNewEntryTapped_tellsTheAddInterfaceInteractorToShowTheAddInterface() {
+        let mockAddInterfaceInteractor = MockAddItemInteractor()
+        let sut = ListEventHandler(listInteractor: MockListInteractor(), addItemInteractor: mockAddInterfaceInteractor)
         sut.addNewEntryTapped()
-        XCTAssertTrue(mockPresenter.presentAddInterfaceWasCalled)
+        XCTAssertTrue(mockAddInterfaceInteractor.showAddInterfaceWasCalled)
     }
     
     func test_viewWillAppear_tellsTheInteractorToFindUpcomingItems() {
         let mockInteractor = MockListInteractor()
-        let sut = ListEventHandler(interactor: mockInteractor, presenter: MockListPresenter())
+        let sut = ListEventHandler(listInteractor: mockInteractor, addItemInteractor: MockAddItemInteractor())
         sut.viewWillAppear()
         XCTAssertTrue(mockInteractor.findUpcomingItemsWasCalled)
     }
     
     func test_addModuleDidSaveAddAction_tellsTheInteractorToFindUpcomingItems() {
         let mockInteractor = MockListInteractor()
-        let sut = ListEventHandler(interactor: mockInteractor, presenter: MockListPresenter())
+        let sut = ListEventHandler(listInteractor: mockInteractor, addItemInteractor: MockAddItemInteractor())
         sut.addModuleDidSaveAddAction()
         XCTAssertTrue(mockInteractor.findUpcomingItemsWasCalled)
     }
     
     func test_addModuleDidCancelAddAction_DoesNotTellTheInteractorToFindUpcomingItems() {
         let mockInteractor = MockListInteractor()
-        let sut = ListEventHandler(interactor: mockInteractor, presenter: MockListPresenter())
+        let sut = ListEventHandler(listInteractor: mockInteractor, addItemInteractor: MockAddItemInteractor())
         sut.addModuleDidCancelAddAction()
         XCTAssertFalse(mockInteractor.findUpcomingItemsWasCalled)
     }
 }
 
 extension ListEventHandlerTests {
-    class MockListPresenter: ListPresenting {
-        var presentAddInterfaceWasCalled = false
-        func presentAddInterface() {
-            presentAddInterfaceWasCalled = true
+    class MockAddItemInteractor: AddItemInteractorInput {
+        var showAddInterfaceWasCalled = false
+        func showAddInterface() {
+            showAddInterfaceWasCalled = true
         }
     }
     

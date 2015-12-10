@@ -28,7 +28,8 @@ class AppDependencies {
         let listPresenter = ListPresenter()
         let listDataManager = ListDataManager()
         let listInteractor = ListInteractor(dataManager: listDataManager, clock: clock)
-        let listEventHandler = ListEventHandler(interactor: listInteractor, presenter: listPresenter)
+        let addItemInteractor = AddItemInteractor(output: listPresenter)
+        let listEventHandler = ListEventHandler(listInteractor: listInteractor, addItemInteractor: addItemInteractor)
         
         let addWireframe = AddWireframe()
         let addInteractor = AddInteractor()
