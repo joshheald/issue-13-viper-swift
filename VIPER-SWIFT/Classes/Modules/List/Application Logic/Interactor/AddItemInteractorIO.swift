@@ -12,6 +12,6 @@ protocol AddItemInterfaceInteractorInput {
     func showAddInterface()
 }
 
-protocol AddItemInteractorOutput {
+protocol AddItemInterfaceInteractorOutput {
     func presentAddInterface()
 }

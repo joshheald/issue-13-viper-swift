@@ -9,8 +9,8 @@
 import UIKit
 
 class AddItemInterfaceInteractor: NSObject, AddItemInterfaceInteractorInput {
-    let output : AddItemInteractorOutput
-    init(output: AddItemInteractorOutput) {
+    let output : AddItemInterfaceInteractorOutput
+    init(output: AddItemInterfaceInteractorOutput) {
         self.output = output
     }
     

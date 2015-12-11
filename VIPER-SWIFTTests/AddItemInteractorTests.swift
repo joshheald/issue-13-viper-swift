@@ -24,7 +24,7 @@ class AddItemInterfaceInteractorTests: XCTestCase {
     
     func test_showAddItemInterface_callsPresentAddItemInterface_onInteractorOutput() {
         let mockInteractorOutput = MockAddItemInteractorOutput()
-        let sut = AddItemInteractor(output: mockInteractorOutput)
+        let sut = AddItemInterfaceInteractor(output: mockInteractorOutput)
         sut.showAddInterface()
         XCTAssertTrue(mockInteractorOutput.presentAddInterfaceWasCalled)
     }
@@ -32,7 +32,7 @@ class AddItemInterfaceInteractorTests: XCTestCase {
 }
 
 extension AddItemInterfaceInteractorTests {
-    class MockAddItemInteractorOutput: AddItemInteractorOutput {
+    class MockAddItemInteractorOutput: AddItemInterfaceInteractorOutput {
         var presentAddInterfaceWasCalled = false
         func presentAddInterface() {
             presentAddInterfaceWasCalled = true

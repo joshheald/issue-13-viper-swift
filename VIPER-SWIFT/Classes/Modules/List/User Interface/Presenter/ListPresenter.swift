@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ListPresenter : NSObject, ListInteractorOutput, AddItemInteractorOutput {
+class ListPresenter : NSObject, ListInteractorOutput, AddItemInterfaceInteractorOutput {
     var listWireframe : ListWireframe?
     var userInterface : ListViewInterface?
     
