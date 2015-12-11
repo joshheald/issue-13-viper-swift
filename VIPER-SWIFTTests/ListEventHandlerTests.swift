@@ -22,7 +22,7 @@ class ListEventHandlerTests: XCTestCase {
     }
     
     func test_addNewEntryTapped_tellsTheAddInterfaceInteractorToShowTheAddInterface() {
-        let mockAddInterfaceInteractor = MockAddItemInteractor()
+        let mockAddInterfaceInteractor = MockAddItemInterfaceInteractor()
         let sut = ListEventHandler(listInteractor: MockListInteractor(), addItemInteractor: mockAddInterfaceInteractor)
         sut.addNewEntryTapped()
         XCTAssertTrue(mockAddInterfaceInteractor.showAddInterfaceWasCalled)
@@ -30,28 +30,28 @@ class ListEventHandlerTests: XCTestCase {
     
     func test_viewWillAppear_tellsTheInteractorToFindUpcomingItems() {
         let mockInteractor = MockListInteractor()
-        let sut = ListEventHandler(listInteractor: mockInteractor, addItemInteractor: MockAddItemInteractor())
+        let sut = ListEventHandler(listInteractor: mockInteractor, addItemInteractor: MockAddItemInterfaceInteractor())
         sut.viewWillAppear()
         XCTAssertTrue(mockInteractor.findUpcomingItemsWasCalled)
     }
     
     func test_addModuleDidSaveAddAction_tellsTheInteractorToFindUpcomingItems() {
         let mockInteractor = MockListInteractor()
-        let sut = ListEventHandler(listInteractor: mockInteractor, addItemInteractor: MockAddItemInteractor())
+        let sut = ListEventHandler(listInteractor: mockInteractor, addItemInteractor: MockAddItemInterfaceInteractor())
         sut.addModuleDidSaveAddAction()
         XCTAssertTrue(mockInteractor.findUpcomingItemsWasCalled)
     }
     
     func test_addModuleDidCancelAddAction_DoesNotTellTheInteractorToFindUpcomingItems() {
         let mockInteractor = MockListInteractor()
-        let sut = ListEventHandler(listInteractor: mockInteractor, addItemInteractor: MockAddItemInteractor())
+        let sut = ListEventHandler(listInteractor: mockInteractor, addItemInteractor: MockAddItemInterfaceInteractor())
         sut.addModuleDidCancelAddAction()
         XCTAssertFalse(mockInteractor.findUpcomingItemsWasCalled)
     }
 }
 
 extension ListEventHandlerTests {
-    class MockAddItemInteractor: AddItemInteractorInput {
+    class MockAddItemInterfaceInteractor: AddItemInterfaceInteractorInput {
         var showAddInterfaceWasCalled = false
         func showAddInterface() {
             showAddInterfaceWasCalled = true

@@ -11,9 +11,9 @@ import UIKit
 class ListEventHandler: NSObject, ListModuleInterface, AddModuleDelegate {
     
     let listInteractor : ListInteractorInput
-    let addItemInteractor : AddItemInteractorInput
+    let addItemInteractor : AddItemInterfaceInteractorInput
     
-    init(listInteractor: ListInteractorInput, addItemInteractor: AddItemInteractorInput) {
+    init(listInteractor: ListInteractorInput, addItemInteractor: AddItemInterfaceInteractorInput) {
         self.listInteractor = listInteractor
         self.addItemInteractor = addItemInteractor
     }

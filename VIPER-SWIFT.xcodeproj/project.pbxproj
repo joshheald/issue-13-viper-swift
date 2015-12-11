@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2025D1C31C198FE900EF2EC4 /* AddItemInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2025D1C21C198FE900EF2EC4 /* AddItemInteractorTests.swift */; };
-		2025D1C51C1990F200EF2EC4 /* AddItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2025D1C41C1990F200EF2EC4 /* AddItemInteractor.swift */; };
+		2025D1C51C1990F200EF2EC4 /* AddItemInterfaceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2025D1C41C1990F200EF2EC4 /* AddItemInterfaceInteractor.swift */; };
 		202B615E1C172F8E00D98A7A /* ListEventHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B615D1C172F8E00D98A7A /* ListEventHandlerTests.swift */; };
 		202B61611C17324100D98A7A /* ListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B61601C17324100D98A7A /* ListEventHandler.swift */; };
 		202B61651C18816400D98A7A /* AddItemInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B61641C18816400D98A7A /* AddItemInteractorIO.swift */; };
@@ -79,7 +79,7 @@
 
 /* Begin PBXFileReference section */
 		2025D1C21C198FE900EF2EC4 /* AddItemInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemInteractorTests.swift; sourceTree = "<group>"; };
-		2025D1C41C1990F200EF2EC4 /* AddItemInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemInteractor.swift; sourceTree = "<group>"; };
+		2025D1C41C1990F200EF2EC4 /* AddItemInterfaceInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemInterfaceInteractor.swift; sourceTree = "<group>"; };
 		202B615D1C172F8E00D98A7A /* ListEventHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEventHandlerTests.swift; sourceTree = "<group>"; };
 		202B61601C17324100D98A7A /* ListEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEventHandler.swift; sourceTree = "<group>"; };
 		202B61641C18816400D98A7A /* AddItemInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemInteractorIO.swift; sourceTree = "<group>"; };
@@ -407,7 +407,7 @@
 				261FA1A519414A720029F589 /* ListInteractorIO.swift */,
 				202B61641C18816400D98A7A /* AddItemInteractorIO.swift */,
 				261FA1A619414A720029F589 /* UpcomingItem.swift */,
-				2025D1C41C1990F200EF2EC4 /* AddItemInteractor.swift */,
+				2025D1C41C1990F200EF2EC4 /* AddItemInterfaceInteractor.swift */,
 			);
 			name = Interactors;
 			path = Interactor;
@@ -625,7 +625,7 @@
 				261FA1D019414A720029F589 /* ListInteractor.swift in Sources */,
 				202B61611C17324100D98A7A /* ListEventHandler.swift in Sources */,
 				261FA1C019414A720029F589 /* NearTermDateRelation.swift in Sources */,
-				2025D1C51C1990F200EF2EC4 /* AddItemInteractor.swift in Sources */,
+				2025D1C51C1990F200EF2EC4 /* AddItemInterfaceInteractor.swift in Sources */,
 				261FA1E719414CBE0029F589 /* ManagedTodoItem.swift in Sources */,
 				261FA1D819414A720029F589 /* UpcomingDisplayItem.swift in Sources */,
 				261FA1BC19414A720029F589 /* NSCalendar+CalendarAdditions.swift in Sources */,

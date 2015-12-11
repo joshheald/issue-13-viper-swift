@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AddItemInteractorInput {
+protocol AddItemInterfaceInteractorInput {
     func showAddInterface()
 }
 

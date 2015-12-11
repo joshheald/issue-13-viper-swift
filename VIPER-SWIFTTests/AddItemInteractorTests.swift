@@ -10,7 +10,7 @@ import XCTest
 
 @testable import VIPER_SWIFT
 
-class AddItemInteractorTests: XCTestCase {
+class AddItemInterfaceInteractorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -31,7 +31,7 @@ class AddItemInteractorTests: XCTestCase {
     
 }
 
-extension AddItemInteractorTests {
+extension AddItemInterfaceInteractorTests {
     class MockAddItemInteractorOutput: AddItemInteractorOutput {
         var presentAddInterfaceWasCalled = false
         func presentAddInterface() {
